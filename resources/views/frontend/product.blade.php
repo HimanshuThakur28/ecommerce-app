@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
    
     function fetchAllProducts() {
-        fetch('http://127.0.0.1:8000/api/products', {
+        fetch('/api/products', {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + token
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     function fetchSearchedProducts(query) {
-    fetch('http://127.0.0.1:8000/api/products/search', {
+    fetch('/api/products/search', {
         method: 'POST',
         headers: {
             'Authorization': 'Bearer ' + token,
